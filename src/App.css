@@ -235,7 +235,7 @@ a {
 
 .hit-image img {
   width: auto;
-  max-height: 176px;
+  max-height: 100px;
 }
 
 .hit-name {

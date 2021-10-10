@@ -8,7 +8,7 @@ function Hit({ hit }) {
   return (
     <div className="hit">
       <div className="hit-image">
-        <img src={hit.image} />
+        <img src={hit.image} alt={hit.idname} />
       </div>
       <div className="hit-content">
         <div>
@@ -16,6 +16,7 @@ function Hit({ hit }) {
             <Highlight attribute="displayName" hit={hit} tagName="em" />
           </div>
           <div className="hit-price">{hit.slogan}</div>
+
           <div className="hit-description">
             <Snippet attribute="description" hit={hit} />
           </div>

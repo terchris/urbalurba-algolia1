@@ -41,34 +41,53 @@ class App extends Component {
             </div>
             <div id="stats">
               {/* Uncomment the following widget to add search stats */}
-              {/* <Stats /> */}
+              <Stats />
             </div>
             <div id="pagination">
               {/* Uncomment the following widget to add pagination */}
-              {/* <Pagination /> */}
+              <Pagination />
             </div>
           </div>
           <div className="left-panel">
             <div id="categories">
-              {/* Uncomment the following widget to add categories list */}
-              {/* <Panel header="Categories">
-                <Facet attribute="categories" />
-              </Panel> */}
+              <Panel header="Type">
+                <Facet attribute="entitytype" />
+              </Panel>
             </div>
+
+            <div id="categories">
+              <Panel header="Sektor">
+                <Facet attribute="categories.Sektor" />
+              </Panel>
+            </div>
+
+            <div id="brands">
+              <Panel header="Country">
+                <Facet attribute="country" />
+              </Panel>
+            </div>
+
+            <div id="brands">
+              <Panel header="County">
+                <Facet attribute="countyName" />
+              </Panel>
+            </div>
+
             <div id="brands">
               {/* Uncomment the following widget to add brands list */}
-              {/* <Panel header="Brands">
+              <Panel header="Networks">
                 <Facet
-                  attribute="brand"
+                  attribute="networkMemberships"
                   searchable={true}
-                  translations={{ placeholder: "Search for other..." }}
+                  translations={{ placeholder: "Søk og velg nettverk" }}
                 />
-              </Panel> */}
+              </Panel>
             </div>
+
             <div id="price">
               {/* Uncomment the following widget to add price */}
-              {/* <Panel header="Price">
-                <RangeSlider attribute="price" />
+              {/* <Panel header="Ansatte.">
+                <RangeSlider attribute="employees" />
               </Panel> */}
             </div>
           </div>
