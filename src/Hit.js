@@ -13,13 +13,13 @@ function Hit({ hit }) {
       <div className="hit-content">
         <div>
           <div className="hit-name">
-            <Highlight attribute="name" hit={hit} tagName="em" />
+            <Highlight attribute="displayName" hit={hit} tagName="em" />
           </div>
+          <div className="hit-price">{hit.slogan}</div>
           <div className="hit-description">
             <Snippet attribute="description" hit={hit} />
           </div>
         </div>
-        <div className="hit-price">${hit.price}</div>
       </div>
     </div>
   );

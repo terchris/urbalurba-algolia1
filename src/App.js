@@ -16,9 +16,9 @@ class App extends Component {
   render() {
     return (
       <InstantSearch
-        appId="B1G2GM9NG0"
-        apiKey="aadef574be1f9252bb48d4ea09b5cfe5"
-        indexName="demo_ecommerce"
+        appId="XJ6GHMNAHP"
+        apiKey="a691c1e7ecf89587d7c25dc316e29b91"
+        indexName="dev_urbalurba"
       >
         <main className="search-container">
           <Configure
@@ -29,13 +29,15 @@ class App extends Component {
           <div className="right-panel">
             <div id="hits">
               {/* Uncomment the following widget to add hits list */}
-              {/* <Content /> */}
+              <Content />
             </div>
             <div id="searchbox">
               {/* Uncomment the following widget to add a search bar */}
-              {/* <SearchBox
-                translations={{ placeholder: "Search for products" }}
-              /> */}
+              <SearchBox
+                translations={{
+                  placeholder: "Finn organisasjoner og prosjekter"
+                }}
+              />
             </div>
             <div id="stats">
               {/* Uncomment the following widget to add search stats */}
